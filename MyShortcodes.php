@@ -5,7 +5,7 @@ Plugin URI: http://www.designbuero-freise.de/download/wp/markusfreise
 Description: Meine eigenen kleinen Shortcodes
 Version: 0.1
 Author: Markus Freise
-Author URI: http://www.markus-freise.de/
+Author URI: http://www.markus-freise.de/ 
 */
 
 
@@ -102,12 +102,12 @@ add_shortcode('small','_sc_freise_small');
 
 function the_content_filter($content) {
 
-	// array of custom shortcodes requiring the fix 
+	// array of custom shortcodes requiring the fix
 	$block = join("|",array("col","col2","col3","col4","box"));
 
 	// opening tag
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
-		
+
 	// closing tag
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 
