@@ -5,7 +5,7 @@ Plugin URI: http://www.designbuero-freise.de/download/wp/markusfreise
 Description: Meine eigenen kleinen Shortcodes
 Version: 0.1
 Author: Markus Freise
-Author URI: http://www.markus-freise.de/  
+Author URI: http://www.markus-freise.de/   
 */
 
 
